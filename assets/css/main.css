@@ -201,7 +201,7 @@ textarea {
 }
 
 .side.front {
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background: linear-gradient(135deg, #1c88ed 0%, #27659c 100%);
 	color: white;
 }
 
@@ -218,18 +218,24 @@ textarea {
 }
 
 .side.back {
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background: linear-gradient(135deg, #1c88ed 0%, #27659c 100%);
 	color: #fff;
 	transform: rotateY(180deg);
-	border: 2px solid #667eea;
+	border: 2px solid #1c88ed;
 }
 
 .side.back p {
-	font-size: 0.95rem;
+	font-size: 0.8rem;
 	font-weight: bold;
 	line-height: 1.6;
 	text-align: center;
 	margin: 0;
+}
+
+@media (max-width: 1424px) {
+	.side.back p {
+		font-size: 0.9rem;
+	}
 }
 
 @media (max-width: 768px) {
@@ -284,7 +290,7 @@ textarea {
 }
 
 .banner{
-	background: linear-gradient(45deg, #190453 0%, #922450 100%);
+	background: linear-gradient(45deg, #1c88ed 0%, #fff 100%);
 	width: 100%;
     display: inline-block;
     height: 50px;
@@ -1416,6 +1422,7 @@ button {
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: 1;
+	opacity: 0.8;
 }
 
 body.is-article-visible #bg:after {
